@@ -1,0 +1,24 @@
+.summary {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-top: 35px;
+}
+
+.summary div {
+	border: solid 1px rgba(0, 0, 0, 0.2);
+	padding: 0 20px;
+	height: 100px;
+	background: #f8f8ff;
+	box-shadow: 1px 2px rgba(0, 0, 0, 0.2);
+	line-height: 15px;
+	margin-bottom: 10px;
+}
+
+.summary div p:first-child,
+p:last-child {
+	font-size: 14px;
+	color: grey;
+}
