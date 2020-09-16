@@ -1,4 +1,4 @@
-## COVID APP
+## COVID APP USING REACT AND COVIDAPI
 
 ### live version:https://covidapp111.web.app
 
