@@ -4,6 +4,7 @@ import "./Summary.css";
 import Axios from "axios";
 import Context from "../../Context/Context";
 import Formatter from "../../Num_formatter/Formatter";
+import NumberFormat from "react-number-format";
 
 const Summary = () => {
 	const [summary, setSummary] = useState([]);
@@ -24,7 +25,13 @@ const Summary = () => {
 			<div className="cases">
 				<p>Total Cases Today</p>
 				<p>
-					<b>{Formatter(summary.todayCases)}</b>
+					<b>
+						<NumberFormat
+							value={summary.todayCases}
+							thousandSeparator={true}
+							displayType={"text"}
+						/>
+					</b>
 				</p>
 				<p>{Formatter(summary.cases)} Total</p>
 			</div>
@@ -32,7 +39,13 @@ const Summary = () => {
 			<div className="recovered">
 				<p>Total Recovered Today</p>
 				<p>
-					<b>{Formatter(summary.todayRecovered)}</b>
+					<b>
+						<NumberFormat
+							value={summary.todayRecovered}
+							thousandSeparator={true}
+							displayType={"text"}
+						/>
+					</b>
 				</p>
 				<p>{Formatter(summary.recovered)} Total</p>
 			</div>
@@ -40,7 +53,13 @@ const Summary = () => {
 			<div className="deaths">
 				<p>Total Deaths Today</p>
 				<p>
-					<b>{Formatter(summary.todayDeaths)}</b>
+					<b>
+						<NumberFormat
+							value={summary.todayDeaths}
+							thousandSeparator={true}
+							displayType={"text"}
+						/>
+					</b>
 				</p>
 				<p>{Formatter(summary.deaths)} Total</p>
 			</div>

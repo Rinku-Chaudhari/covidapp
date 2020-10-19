@@ -1,4 +1,10 @@
 .app {
-  width: 75%;
-  margin: auto;
+	width: 75%;
+	margin: auto;
+}
+
+@media (max-width: 500px) {
+	.app {
+		width: 95%;
+	}
 }

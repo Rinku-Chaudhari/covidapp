@@ -22,3 +22,11 @@ p:last-child {
 	font-size: 14px;
 	color: grey;
 }
+
+@media (max-width: 655px) {
+	.summary {
+		display: flex;
+		flex-direction: column;
+		align-items: stretch;
+	}
+}
